@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Resume Tailor AI (Groq)",
+  "version": "1.0.0",
+  "description": "Tailors your resume to a job description and company using Groq AI.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Resume Tailor AI"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html"
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Tailor Settings</title>
+  <style>
+    body { padding: 20px; font-family: Arial, sans-serif; max-width: 700px; }
+    textarea { width: 100%; height: 260px; margin: 10px 0; padding: 8px; box-sizing: border-box; }
+    button { padding: 10px 20px; background: #4285f4; color: white; border: none; cursor: pointer; margin: 5px 0; border-radius: 4px; }
+    button:hover { background: #357ae8; }
+    .success { color: green; margin: 10px 0; font-weight: bold; }
+    .error { color: red; margin: 10px 0; }
+    .help-text { font-size: 12px; color: #666; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>Resume Tailor AI - Settings</h1>
+  
+  <h3>Groq API Keys</h3>
+  <textarea id="apiKeys" placeholder="Paste one or more Groq API keys here, one per line"></textarea>
+  <p class="help-text">
+    You can paste multiple keys, one per line. The extension will automatically rotate between them when limits are hit.
+  </p>
+  <p class="help-text">Get keys at <a href="https://console.groq.com" target="_blank">console.groq.com</a>.</p>
+  
+  <h3>Your Base Resume (Text)</h3>
+  <p class="help-text">
+    Paste your full resume (experience, skills, education). The extension will tailor this to each job.
+  </p>
+  <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+  
+  <button id="save">💾 Save Settings</button>
+  <button id="test">🧪 Test First API Key</button>
+  <div id="status" class="success"></div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
