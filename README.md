@@ -132,15 +132,6 @@ GOOGLE — Data Engineer (2023–Present)
 🏗️ Architecture: Manifest V3 Service Worker
 ```
 
----
-
-## 🎨 Screenshots
-
-_Add screenshots of: popup UI, Fetch JD button, and tailored resume output._
-
-```
-![Extension in action](images/demo.png)
-```
 
 ---
 
@@ -192,20 +183,6 @@ _Add screenshots of: popup UI, Fetch JD button, and tailored resume output._
 
 ---
 
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
-
----
-
-## 👨‍💼 Author
-
-**Sriram Teja**  
-Data Engineer | Job Automation Specialist  
-GitHub: https://github.com/ssriramteja  
-Portfolio: https://ssriramteja.com
-
----
 
 **Tailored 1000+ resumes**  
 ⭐ Star the repo if it helps you land interviews!
